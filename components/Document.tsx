@@ -11,6 +11,7 @@ const Document = ({ id }: { id: string }) => {
   const [data, loading, error] = useDocumentData(doc(db, "documents", id));
   const [input, setInput] = useState("");
   const [isUpdating, startTransition] = useTransition();
+  const isOwner = useOwner();
 
   useEffect(() => {
     if (data) {
@@ -39,7 +40,7 @@ const Document = ({ id }: { id: string }) => {
             value={input}
             onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
               setInput(e.target.value)
-            } // Add proper type annotation for event
+            }
           />
 
           <Button disabled={isUpdating} type="submit">
