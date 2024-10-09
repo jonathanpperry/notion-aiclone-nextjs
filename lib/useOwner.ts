@@ -1,5 +1,5 @@
 "use client";
-const useOwner = () => {
-  return <div>useOwner</div>;
-};
+
+const useOwner = () => {};
+
 export default useOwner;
