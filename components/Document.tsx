@@ -11,7 +11,6 @@ const Document = ({ id }: { id: string }) => {
   const [data, loading, error] = useDocumentData(doc(db, "documents", id));
   const [input, setInput] = useState("");
   const [isUpdating, startTransition] = useTransition();
-//   const isOwner = useOwner();
 
   useEffect(() => {
     if (data) {
@@ -55,6 +54,8 @@ const Document = ({ id }: { id: string }) => {
 
         {/* Avatars */}
       </div>
+
+      <hr className="pb-10" />
 
       {/* Collaborative Editor */}
     </div>
