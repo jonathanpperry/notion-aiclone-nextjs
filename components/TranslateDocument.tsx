@@ -1,6 +1,8 @@
 "use client";
 import { useState, useTransition } from "react";
-
+import { BotIcon, LanguagesIcon } from "lucide-react";
+import { toast } from "sonner";
+import Markdown from "react-markdown";
 import * as Y from "yjs";
 import {
   Dialog,
@@ -18,9 +20,6 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Button } from "./ui/button";
-import { BotIcon, LanguagesIcon } from "lucide-react";
-import { toast } from "sonner";
-import Markdown from "react-markdown";
 
 type Language =
   | "english"

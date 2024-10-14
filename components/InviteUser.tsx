@@ -69,4 +69,5 @@ const InviteUser = () => {
     </Dialog>
   );
 };
+
 export default InviteUser;
