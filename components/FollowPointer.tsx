@@ -1,6 +1,6 @@
 "use client";
 import stringToColor from "@/lib/stringToColor";
-import { motion, AnimatePresence, useMotionValue } from "framer-motion";
+import { motion } from "framer-motion";
 
 const FollowPointer = ({
   x,

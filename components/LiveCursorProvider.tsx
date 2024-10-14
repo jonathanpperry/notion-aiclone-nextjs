@@ -4,7 +4,7 @@ import FollowPointer from "./FollowPointer";
 import { PointerEvent } from "react";
 
 const LiveCursorProvider = ({ children }: { children: React.ReactNode }) => {
-  const [myPresence, updateMyPresence] = useMyPresence();
+  const [_, updateMyPresence] = useMyPresence();
   const others = useOthers();
 
   function handlePointerMove(e: PointerEvent<HTMLDivElement>) {

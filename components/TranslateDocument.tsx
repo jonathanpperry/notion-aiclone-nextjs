@@ -50,7 +50,6 @@ const TranslateDocument = ({ doc }: { doc: Y.Doc }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [language, setLanguage] = useState<string>("");
   const [summary, setSummary] = useState("");
-  const [question, setQuestion] = useState("");
   const [isPending, startTransition] = useTransition();
 
   const handleAskQuestion = async (e: React.FormEvent) => {
@@ -100,8 +99,6 @@ const TranslateDocument = ({ doc }: { doc: Y.Doc }) => {
             </DialogDescription>
 
             <hr className="mt-5" />
-
-            {question && <p className="mt-5 text-gray-500">Q: {question}</p>}
           </DialogHeader>
 
           {summary && (
