@@ -109,9 +109,9 @@ const TranslateDocument = ({ doc }: { doc: Y.Doc }) => {
                   GPT {isPending ? "is thinking..." : "Says:"}
                 </p>
               </div>
-              <p>
+              <div>
                 {isPending ? "Thinking..." : <Markdown>{summary}</Markdown>}
-              </p>
+              </div>
             </div>
           )}
 
